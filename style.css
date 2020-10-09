@@ -62,6 +62,13 @@ body {
   padding: 5px;
   height: 100%;
   width: 2em;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  cursor: pointer;
+  user-select: none;
 }
 
 #list {
@@ -78,11 +85,11 @@ body {
 }
 
 .listItem:nth-child(odd) {
-  background: orange;
+  background-color: orange;
 }
 
 .listItem:nth-child(even) {
-  background: rgb(255, 183, 49);
+  background-color: rgb(255, 183, 49);
 }
 .listItemText {
   height: 100%;
@@ -98,4 +105,24 @@ body {
   flex: 0 1 auto;
   height: 2em;
   width: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alert {
+  position: absolute;
+  left: calc(50vw - 250px);
+  top: calc(50vh - 50px);
+  width: 500px;
+  height: 100px;
+  background-color: lemonchiffon;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+#alertText {
 }
